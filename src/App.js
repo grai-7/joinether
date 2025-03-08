@@ -9,7 +9,11 @@ import './App.css';
 
 function App() {
   return (
-    <Layout>
+    <Layout 
+      title="Ether | All-in-One School Management Solution"
+      description="Transform your school operations with Ether - the comprehensive SaaS platform for modern educational institutions."
+      keywords="school management system, education software, B2B SaaS, student information system"
+    >
       <HeroSection />
       <FeaturesSection />
       <ProblemSolutionSection />

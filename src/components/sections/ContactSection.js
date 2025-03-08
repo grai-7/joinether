@@ -13,7 +13,7 @@ function ContactSection() {
         </Row>
         <Row className="justify-content-center">
           <Col md={8} lg={6}>
-            <Form className="p-4 bg-white shadow rounded">
+            <Form className="p-4 bg-white shadow rounded" data-aos="fade-up">
               <Row>
                 <Col md={6}>
                   <Form.Group className="mb-3">

@@ -38,7 +38,7 @@ function TestimonialsSection() {
         <Row>
           {testimonials.map(testimonial => (
             <Col md={4} key={testimonial.id} className="mb-4">
-              <Card className="h-100 shadow">
+              <Card className="h-100 shadow" data-aos="zoom-in" data-aos-delay={testimonial.id * 100}>
                 <Card.Body className="d-flex flex-column">
                   <div className="display-4 mb-3 text-center">{testimonial.avatar}</div>
                   <Card.Text className="flex-grow-1 font-italic">"{testimonial.content}"</Card.Text>

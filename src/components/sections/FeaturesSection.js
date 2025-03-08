@@ -53,7 +53,7 @@ function FeaturesSection() {
         <Row>
           {features.map(feature => (
             <Col md={6} lg={4} key={feature.id} className="mb-4">
-              <Card className="h-100 shadow-sm">
+              <Card className="h-100 shadow-sm" data-aos="fade-up" data-aos-delay={feature.id * 100}>
                 <Card.Body className="d-flex flex-column">
                   <div className="display-4 mb-3 text-primary">{feature.icon}</div>
                   <Card.Title>{feature.title}</Card.Title>

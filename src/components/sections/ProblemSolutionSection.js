@@ -41,24 +41,25 @@ function ProblemSolutionSection() {
           <Row 
             key={item.id} 
             className={`mb-4 align-items-center ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}
+            data-aos="fade-up"
           >
-            <Col md={6} className="mb-3 mb-md-0">
-              <Card className="border-danger h-100">
-                <Card.Body>
-                  <h5 className="text-danger mb-3">The Problem:</h5>
-                  <p className="lead mb-0">{item.problem}</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Card className="border-success h-100">
-                <Card.Body>
-                  <h5 className="text-success mb-3">Our Solution:</h5>
-                  <p className="lead mb-0">{item.solution}</p>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
+          <Col md={6} className="mb-3 mb-md-0">
+            <Card className="border-danger h-100" data-aos="fade-right" data-aos-delay="200">
+              <Card.Body>
+                <h5 className="text-danger mb-3">The Problem:</h5>
+                <p className="lead mb-0">{item.problem}</p>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6}>
+            <Card className="border-success h-100" data-aos="fade-left" data-aos-delay="200">
+              <Card.Body>
+                <h5 className="text-success mb-3">Our Solution:</h5>
+                <p className="lead mb-0">{item.solution}</p>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
         ))}
       </Container>
     </section>
